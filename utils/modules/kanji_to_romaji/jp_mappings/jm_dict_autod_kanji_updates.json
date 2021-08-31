@@ -1,0 +1,18 @@
+{
+  "今日": {
+    "w_type": "noun",
+    "romaji": "kyou"
+  },
+  "明日": {
+    "w_type": "noun",
+    "romaji": "ashita"
+  },
+  "本": {
+    "w_type": "noun",
+    "romaji": "hon"
+  },
+  "中": {
+    "w_type": "noun",
+    "romaji": "naka"
+  }
+}

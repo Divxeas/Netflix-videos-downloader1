@@ -1,0 +1,113 @@
+{
+    "BUILD_IDENTIFIER": "v970d0ec4",
+    "cookies": {
+        "_ga": [
+            "GA1.2.1140108570.1617215940",
+            0
+        ],
+        "NetflixId": [
+            "v%3D2%26ct%3DBQAOAAEBEHOzu6KP28kdADXLobUUrROB0PoBjq3JxcX1vGfDcXUv4xVDQq5H6XsQyE1Frj5SPGO99pNqlZl9A5O3CZUdxiur6u9F5dqAyA0veRgT2bVpQnJ-h7kBmZdPSr3HyGHD9fMnj07AjgioUxeWFsJPky9pVuFRADdnSQXFFqK1NpW2TpDRpGEFRInaAZ9Hr-y6y4J7ggTgHQhbL8CI6NgAHFs8QgPEC9jcyvyFKQmRIBUeU-HS2-WSNlNwSxquZ4bNGBasoTIMGE_8A3R2Mo4lc-qio2Df8Qdv-elVwj8S6VeH8v-brCDpPk-VcDbQp1O2sPb9oKnbCS0DNYL3TqGXzMBNVrL_nHfxDEbPss8929Tc9Ra5HA3635DKbxEJc-tq3u9xUeb_DszXHIS5O-sg6595Pn-LPWBxphkPKdftdLYsQD1RzR0ena_UNrvr-8lIE5TxCXJhLXK0msAfypuevVH1XKXN2FsHJyR0JbbzkOYN2KNxCmRfNkYezY28fKRoufM1F6gF5HDMxuLzw_KjrDV6is18lbNbcmP32_TY2aJnWfHqSaGw5DWnQ3shDKo4SltLUjCuJzYGY7YJAEM-3ifbtwN-QgKyWTUsCwtrrYlDnpUy4rs3rnJyAu8EElWymMkV%26bt%3Ddbl%26ch%3DAQEAEAABABSprqjfXbW6YL0tVF0tz16hvWyTr9LF4jE.%26mac%3DAQEAEAABABRoyiGmz8qurX494b0O21l13oiiV94g9CU.",
+            0
+        ],
+        "OptanonConsent": [
+            "isIABGlobal=false&amp;datestamp=Fri+Jun+18+2021+07%3A58%3A49+GMT-0700+(Pacific+Daylight+Time)&amp;version=6.6.0&amp;consentId=a93027f9-5a1c-410f-8272-e0a1ea3e658d&amp;interactionCount=1&amp;landingPath=NotLandingPage&amp;groups=C0001%3A1%2CC0002%3A1%2CC0004%3A0&amp;hosts=H1%3A1%2CH12%3A1%2CH13%3A1%2CH27%3A0%2CH28%3A0%2CH30%3A0&amp;AwaitingReconsent=false",
+            0
+        ],
+        "SecureNetflixId": [
+            "v%3D2%26mac%3DAQEAEQABABS0Wg3y7pHcIuzNaFVA9OL1hOBszVcpdKc.%26dt%3D1623992368587",
+            0
+        ],
+        "cf_token": [
+            "5d16d7e4-f422-4505-b81a-f13f81d06b71",
+            0
+        ],
+        "flwssn": [
+            "f30c6737-15f8-4a97-8102-a0162bac69bc",
+            0
+        ],
+        "memclid": [
+            "5eb11c58-f94f-46a1-9916-a877c78cc950",
+            0
+        ],
+        "nfvdid": [
+            "BQFmAAEBEHVhRA5F47wt0VzEXxA4lotgv2JbGEnTuU3t2ACmhEmOKuDHWsixD22MEvRfk1SyBSysA4pNyu4UnaMbEBYYAAhCvmGD6sG8LGI_wNxCLpENpUPoF1FF8p3ZOUGBcLkMl5UDunPJGTSHibJ6rP5eZwgX",
+            0
+        ],
+        "pas": [
+            "%7B%22supplementals%22%3A%7B%22muted%22%3Atrue%7D%7D",
+            0
+        ],
+        "playerPerfMetrics": [
+            "%7B%22uiValue%22%3A%7B%22throughput%22%3A24045%2C%22throughputNiqr%22%3A0.1387332986123521%7D%2C%22mostRecentValue%22%3A%7B%22throughput%22%3A24044.9%2C%22throughputNiqr%22%3A0.1387332986123521%7D%7D",
+            0
+        ],
+        "profilesNewSession": [
+            "0",
+            0
+        ],
+        "__cfduid": [
+            "ddc5ba21ab87d546424a73381309e8af61619034211",
+            0
+        ],
+        "_admrla": [
+            "2.0-a88ab21a-c44f-b78a-d6e3-05b3cde370fc",
+            0
+        ],
+        "_awl": [
+            "2.1619452424.0.4-7dc0a353-a88ab21ac44fb78ad6e305b3cde370fc-6763652d617369612d6561737431-6086e208-1",
+            0
+        ],
+        "_gid": [
+            "GA1.2.962657418.1619405560",
+            0
+        ],
+        "ccpaApplies": [
+            "false",
+            0
+        ],
+        "ccpaUUID": [
+            "e05cd352-14f3-4d80-9500-b1d81fee7cd0",
+            0
+        ],
+        "dnsDisplayed": [
+            "true",
+            0
+        ],
+        "signedLspa": [
+            "false",
+            0
+        ],
+        "thx_guid": [
+            "8a067b33cfaa47539ea40975e2b80069",
+            0
+        ],
+        "_sp_v1_csv": [
+            "null",
+            0
+        ],
+        "_sp_v1_data": [
+            "2:334049:1619034213:0:9:0:9:0:0:_:-1",
+            0
+        ],
+        "_sp_v1_lt": [
+            "1:",
+            0
+        ],
+        "_sp_v1_opt": [
+            "1:",
+            0
+        ],
+        "_sp_v1_ss": [
+            "1:H4sIAAAAAAAAAItWqo5RKimOUbKKhjHySnNydGKUUpHYJWCJ6traWFwSSjrUNwiffqVYAG6Fhl26AAAA",
+            0
+        ],
+        "_sp_v1_uid": [
+            "1:365:378b6189-c59f-4807-abd1-95bcd2c5779d",
+            0
+        ],
+        "consentUUID": [
+            "ef33150e-dde3-41af-b14c-18d858e5a51b",
+            0
+        ]
+    }
+}
