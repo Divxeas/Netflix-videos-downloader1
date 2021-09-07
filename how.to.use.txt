@@ -1,0 +1,52 @@
+1. Install python
+
+https://www.python.org/downloads/
+
+2. Install the dependencies by using this command
+
+pip install -r requirements.txt
+
+3. Go to the folder Netflix-videos-downloader-main\configs
+and add your email and password in Netflix in config.py (Config["NETFLIX"])
+
+4.Install the Chrome extension
+
+https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid
+
+and go to netflix.com and download the cookies, rename the file to cookies.txt and put it in
+
+Netflix-videos-downloader-main\configs\Cookies
+
+5. in the script's folder three batches
+
+a. download.subs.bat
+
+for downloading the only the subtitles
+
+change eng to the language you need to download the subtitles in
+
+NFripper.py --nv --na --keep --slang eng
+
+b. download.audio.bat
+
+for downloading only the audio
+
+change eng to the language you need to download the audio in
+
+NFripper.py --ns --nv --keep --alang eng
+
+c. download.video.bat
+
+for downloading the video in AVC high with the audio and subtitles
+
+NFripper.py --high
+
+6 .When you run any of the three batches it will ask for the URL of the TV Show or the movie in Netflix
+
+for example use this link to download the video of Rick and Morty
+
+https://www.netflix.com/watch/80014749
+
+The downloads will be saved in a folder like
+
+D:\#rips\downloads\netflix
