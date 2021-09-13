@@ -19,25 +19,25 @@ Netflix-videos-downloader-main\configs\Cookies
 
 5. In the script's folder three batches
 
-a. download.subs.bat
+a. download.subtitles.bat
 
 for downloading only the subtitles
 
 change eng to the language you need to download the subtitles in
 
-NFripper.py --nv --na --keep --slang eng
+python NFripper.py --no-aria2c --nv --na --keep --slang eng
 
 to download the subtitles in multiple languages use
 
-NFripper.py --nv --na --keep --slang eng fra rus pol
+python NFripper.py --no-aria2c --nv --na --keep --slang eng fra rus pol
 
 if you want to downlod the subtitles for a specific episode or episodes use
 
-NFripper.py --nv --na --keep --slang eng -s 1 -e 8
+python NFripper.py --no-aria2c --nv --na --keep --slang eng -s 1 -e 8
 
-NFripper.py --nv --na --keep --slang eng -s 1 -e 1-3
+python NFripper.py --no-aria2c --nv --na --keep --slang eng -s 1 -e 1-3
 
-NFripper.py --nv --na --keep --slang eng -s 1 -e 2,4,7
+python NFripper.py --no-aria2c --nv --na --keep --slang eng -s 1 -e 2,4,7
 
 b. download.audio.bat
 
@@ -45,17 +45,17 @@ for downloading only the audio
 
 change eng to the language you need to download the audio in
 
-NFripper.py --ns --nv --keep --alang eng
+python NFripper.py --no-aria2c --ns --nv --keep --alang eng
 
 to download the audio in multiple languages use
 
-NFripper.py --ns --nv --keep --alang eng fra rus pol
+python NFripper.py --no-aria2c --ns --nv --keep --alang eng fra rus pol
 
 c. download.video.bat
 
 for downloading the video in AVC high with the audio and subtitles
 
-NFripper.py --high
+python NFripper.py --no-aria2c --high
 
 6. When you run any of the three batches you will be asked for the URL of the TV Show or the movie in Netflix
 
@@ -67,4 +67,4 @@ The downloads will be saved in a folder like
 
 D:\#rips\downloads\netflix
 
-For more options open NFripper.py with Notepad++
+For adding more options use the instructions in NFripper.py, open the file with Notepad++.
