@@ -61,6 +61,10 @@ for downloading the video in AVC high with the audio and subtitles
 
 python NFripper.py --no-aria2c --high
 
+for downloading the video in main with the audio and subtitles
+
+python NFripper.py --no-aria2c --main
+
 6. When you run any of the three batches you will be asked for the URL of the TV Show or the movie in Netflix
 
 for example use this link to download the video of Rick and Morty
@@ -70,5 +74,10 @@ https://www.netflix.com/title/80014749
 The downloads will be saved in a folder like
 
 D:\#rips\downloads\netflix
+
+To change the location of the downloaded files open config.py with Notepad++
+and add the new folder here
+"DL_FOLDER": "E:/#rips",
+
 
 For adding more options use the instructions in NFripper.py, open the file with Notepad++.
