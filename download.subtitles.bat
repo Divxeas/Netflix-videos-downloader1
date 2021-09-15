@@ -1,3 +1,3 @@
 @echo off
-python NFripper.py --no-aria2c --nv --na --keep --slang eng
+python NFripper.py --nv --na --keep --slang eng
 pause
