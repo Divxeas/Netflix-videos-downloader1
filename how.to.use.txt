@@ -73,11 +73,11 @@ https://www.netflix.com/title/80014749
 
 The downloads will be saved in a folder like
 
-D:\#rips\downloads\netflix
+C:\#rips\downloads\netflix
 
 To change the location of the downloaded files open config.py with Notepad++
 and add the new folder here
-"DL_FOLDER": "E:/#rips",
+"DL_FOLDER": "C:/#rips",
 
 
 For adding more options use the instructions in NFripper.py, open the file with Notepad++.
