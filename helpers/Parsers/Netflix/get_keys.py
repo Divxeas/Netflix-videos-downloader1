@@ -52,7 +52,7 @@ def __profiles(profile, addHEVCDO=False):
 	
 	elif profile == "Main KEYS":
 		profiles += [
-			"playready-h264mpl30-dash",
+			"playready-h264bpl30-dash",
 		]
 
 	elif profile == "HEVC KEYS":
