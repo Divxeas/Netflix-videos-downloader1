@@ -6,6 +6,10 @@ https://www.python.org/downloads/
 
 pip install -r requirements.txt
 
+or run
+
+install.requirements.bat
+
 3. Go to the folder Netflix-videos-downloader-main\configs
 and add your email and password in Netflix in config.py (Config["NETFLIX"])
 
@@ -25,19 +29,19 @@ for downloading only the subtitles
 
 change eng to the language you need to download the subtitles in
 
-python NFripper.py --no-aria2c --nv --na --keep --slang eng
+python NFripper.py --nv --na --keep --slang eng
 
 to download the subtitles in multiple languages use
 
-python NFripper.py --no-aria2c --nv --na --keep --slang eng fra rus pol
+python NFripper.py --nv --na --keep --slang eng fra rus pol
 
 if you want to downlod the subtitles for a specific episode or episodes use
 
-python NFripper.py --no-aria2c --nv --na --keep --slang eng -s 1 -e 8
+python NFripper.py --nv --na --keep --slang eng -s 1 -e 8
 
-python NFripper.py --no-aria2c --nv --na --keep --slang eng -s 1 -e 1-3
+python NFripper.py --nv --na --keep --slang eng -s 1 -e 1-3
 
-python NFripper.py --no-aria2c --nv --na --keep --slang eng -s 1 -e 2,4,7
+python NFripper.py --nv --na --keep --slang eng -s 1 -e 2,4,7
 
 b. download.audio.bat
 
