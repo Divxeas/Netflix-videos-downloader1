@@ -48,7 +48,7 @@ MUXER = {
 #####################################(PATHS)#####################################
 
 PATHS = {
-	"DL_FOLDER": "E:/#rips", #
+	"DL_FOLDER": "C:/#rips", #
 	"DIR_PATH": f"{dirPath}",
 	"BINARY_PATH": f"{dirPath}/bin",
 	"COOKIES_PATH": f"{dirPath}/configs/Cookies",
