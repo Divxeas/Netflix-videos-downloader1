@@ -49,21 +49,21 @@ for downloading only the audio
 
 change eng to the language you need to download the audio in
 
-python NFripper.py --no-aria2c --ns --nv --keep --alang eng
+python NFripper.py --ns --nv --keep --alang eng
 
 to download the audio in multiple languages use
 
-python NFripper.py --no-aria2c --ns --nv --keep --alang eng fra rus pol
+python NFripper.py --ns --nv --keep --alang eng fra rus pol
 
 c. download.video.bat
 
 for downloading the video in AVC high with the audio and subtitles
 
-python NFripper.py --no-aria2c --high
+python NFripper.py --high
 
 for downloading the video in main with the audio and subtitles
 
-python NFripper.py --no-aria2c --main
+python NFripper.py --main
 
 6. When you run any of the three batches you will be asked for the URL of the TV Show or the movie in Netflix
 
