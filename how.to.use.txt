@@ -71,13 +71,6 @@ for example use this link to download the video of Rick and Morty
 
 https://www.netflix.com/title/80014749
 
-The downloads will be saved in a folder like
-
-C:\#rips\downloads\netflix
-
-To change the location of the downloaded files open config.py with Notepad++
-and add the new folder here
-"DL_FOLDER": "C:/#rips",
-
+The downloads will be saved in the folder "Netflix-videos-downloader-main\downloads\netflix"
 
 For adding more options use the instructions in NFripper.py, open the file with Notepad++.
