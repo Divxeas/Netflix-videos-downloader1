@@ -1,3 +1,3 @@
 @echo off
-python NFripper.py --no-aria2c --high 
+python NFripper.py --high 
 pause
