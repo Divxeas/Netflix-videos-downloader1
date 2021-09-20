@@ -13,6 +13,8 @@ install.requirements.bat
 3. Go to the folder Netflix-videos-downloader-main\configs
 and add your email and password in Netflix in config.py (Config["NETFLIX"])
 
+https://github.com/Essam3152/Netflix-videos-downloader/blob/main/configs/config.py#L108-L109
+
 4.Install the Chrome extension
 
 https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid
