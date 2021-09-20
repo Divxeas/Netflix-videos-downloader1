@@ -79,3 +79,5 @@ For adding more options use the instructions in NFripper.py, open the file with 
 
 If you got the error message "title is not available in your Netflix region" in Netflix-videos-downloader-main\configs\Cookies
 delete cookies_nf.txt and add a new cookies.txt
+
+Don't put any files in the folder Netflix-videos-downloader-main\configs\Tokens, the script will generate netflix_token.json by itself.
