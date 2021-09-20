@@ -105,8 +105,8 @@ Config["NETFLIX"] = {
 	"cookies_txt": f"{dirPath}/configs/Cookies/cookies.txt",
 	"keys_file": f"{dirPath}/configs/KEYS/netflix.keys",
 	"token_file": f"{dirPath}/configs/Tokens/netflix_token.json",
-	"email": "Cfklop@max07.club",
-	"password": "1111",
+	"email": "enter your email address here", # Enter the email address of your Netflix account here
+	"password": "enter your password here", # Enter the password of your Netflix account here
 	"manifest_language": "en-US",
 	"metada_language": "en",
 	"manifestEsn": "NFCDIE-03-{}".format(utils().random_hex(30)),
