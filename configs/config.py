@@ -78,8 +78,8 @@ VPN = {
 	},
 	"private": {
 		"port": "8080",
-		"email": "abdalhmohmd8@gmail.com",  
-		"passwd": "123456", 
+		"email": "enter your email address here", # Enter the email address of your VPN account here  
+		"passwd": "enter your password here", # Enter the password of your VPN account here
 		"http": "http://{email}:{passwd}@{ip}:{port}",
 	},
 }
