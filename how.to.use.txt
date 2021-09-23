@@ -67,6 +67,14 @@ to download the audio in multiple languages use
 
 python NFripper.py --ns --nv --keep --alang eng fra rus pol
 
+To set the default audio language in config.py replace
+
+"AUDIO": "eng",
+
+with the language you want, for example for the French language to be the default audio language use
+
+"AUDIO": "fra",
+
 c. download.video.bat
 
 for downloading the video in AVC high with the audio and subtitles
