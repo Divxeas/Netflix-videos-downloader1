@@ -45,6 +45,16 @@ python NFripper.py --nv --na --keep --slang eng -s 1 -e 1-3
 
 python NFripper.py --nv --na --keep --slang eng -s 1 -e 2,4,7
 
+To set the default subtitles language in config.py replace
+
+"SUB": "None",
+
+with the language you want, for example for the English language to be the default subtitles language use
+
+"SUB": "eng",
+
+https://github.com/Essam3152/Netflix-videos-downloader/blob/main/configs/config.py#L36
+
 b. download.audio.bat
 
 for downloading only the audio
