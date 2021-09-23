@@ -13,7 +13,18 @@ or run
 install.requirements.bat
 
 3. Go to the folder Netflix-videos-downloader-main\configs
-and add your email and password in Netflix in config.py (Config["NETFLIX"])
+and add your email and password in Netflix in config.py (open the file with Notepad++), search for
+
+	"email": "enter your email address here", # Enter the email address of your Netflix account here
+	"password": "enter your password here", # Enter the password of your Netflix account here
+  
+and replace "enter your email address here" with the email of your account in Netflix, 
+and "enter your password here" with the password of your account in Netflix, and it will be like
+
+	"email": "essam2021236@protonmail.com", # Enter the email address of your Netflix account here
+	"password": "N25&ns&25p7", # Enter the password of your Netflix account here
+
+see the lines
 
 https://github.com/Essam3152/Netflix-videos-downloader/blob/main/configs/config.py#L108-L109
 
