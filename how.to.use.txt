@@ -1,6 +1,8 @@
-1. Install python
+1. Install python, be sure to add python to PATH while installing it
 
 https://www.python.org/downloads/
+
+https://datatofish.com/add-python-to-windows-path/
 
 2. Install the dependencies by using this command
 
