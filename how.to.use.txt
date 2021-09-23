@@ -75,6 +75,8 @@ with the language you want, for example for the French language to be the defaul
 
 "AUDIO": "fra",
 
+https://github.com/Essam3152/Netflix-videos-downloader/blob/main/configs/config.py#L35
+
 c. download.video.bat
 
 for downloading the video in AVC high with the audio and subtitles
