@@ -127,3 +127,7 @@ For the language codes see here.
 
 https://github.com/Essam3152/Netflix-videos-downloader/blob/main/helpers/ripprocess.py#L372-L404
 
+In case of getting any error messages with aria2c you could disable it by adding the command --no-aria2c
+
+python NFripper.py --no-aria2c --high
+
