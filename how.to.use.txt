@@ -108,6 +108,8 @@ or
 
 python NFripper.py --main -q 720
 
+The script does not support decrypting the videos with HDR profile or HEVC profile, do not use --hdr or --hevc
+
 6. When you run any of the three batches you will be asked for the URL of the TV Show or the movie in Netflix
 
 for example use this link to download the video of Rick and Morty
