@@ -36,6 +36,10 @@ and go to netflix.com and download the cookies, rename the file to cookies.txt a
 
 Netflix-videos-downloader-main\configs\Cookies
 
+For Firefox use this addon
+
+https://addons.mozilla.org/en-US/firefox/addon/cookies-txt-one-click/
+
 5. In the script's folder three batches
 
 a. download.subtitles.bat
