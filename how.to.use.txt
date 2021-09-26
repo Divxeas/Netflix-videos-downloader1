@@ -58,6 +58,23 @@ python NFripper.py --nv --na --keep --slang eng -s 1 -e 1-3
 
 python NFripper.py --nv --na --keep --slang eng -s 1 -e 2,4,7
 
+You could download the subtitles of all the seasons by using something like this, this is for the TV show "Friends"
+
+https://www.netflix.com/title/70153404
+
+python NFripper.py --nv --na 70153404 --keep -s 1 --slang eng
+python NFripper.py --nv --na 70153404 --keep -s 2 --slang eng
+python NFripper.py --nv --na 70153404 --keep -s 3 --slang eng
+python NFripper.py --nv --na 70153404 --keep -s 4 --slang eng
+python NFripper.py --nv --na 70153404 --keep -s 5 --slang eng
+python NFripper.py --nv --na 70153404 --keep -s 6 --slang eng
+python NFripper.py --nv --na 70153404 --keep -s 7 --slang eng
+python NFripper.py --nv --na 70153404 --keep -s 8 --slang eng
+python NFripper.py --nv --na 70153404 --keep -s 9 --slang eng
+python NFripper.py --nv --na 70153404 --keep -s 10 --slang eng
+
+remove --slang eng if you want to download the subtitles in all of the available languages in Netflix of your country.
+
 To set the default subtitles language in config.py replace
 
 "SUB": "None",
@@ -115,6 +132,10 @@ The script does not support decrypting the videos with HDR profile or HEVC profi
 for example use this link to download the video of Rick and Morty
 
 https://www.netflix.com/title/80014749
+
+or you could add the ID like this
+
+python NFripper.py 80014749 --high
 
 The downloads will be saved in the folder "Netflix-videos-downloader-main\downloads\netflix"
 
