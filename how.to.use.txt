@@ -124,7 +124,7 @@ https://github.com/Essam3152/Netflix-videos-downloader/blob/main/NFripper.py#L24
 
 To set the default audio language in config.py replace
 
-"AUDIO": "eng",
+"AUDIO": "None",
 
 with the language you want, for example for the French language to be the default audio language use
 
