@@ -19,7 +19,7 @@ and add your email and password in Netflix in config.py (open the file with Note
 	"password": "enter your password here", # Enter the password of your Netflix account here
   
 and replace "enter your email address here" with the email of your account in Netflix, 
-and "enter your password here" with the password of your account in Netflix, and it will be like
+and replace "enter your password here" with the password of your account in Netflix, and it will be like
 
 	"email": "essam2021236@protonmail.com", # Enter the email address of your Netflix account here
 	"password": "N25&ns&25p7", # Enter the password of your Netflix account here
@@ -28,7 +28,7 @@ see the lines
 
 https://github.com/Essam3152/Netflix-videos-downloader/blob/main/configs/config.py#L108-L109
 
-4.Install the Chrome extension
+4. Install this Chrome extension
 
 https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid
 
@@ -42,7 +42,45 @@ https://addons.mozilla.org/en-US/firefox/addon/cookies-txt-one-click/
 
 5. In the script's folder three batches
 
-a. download.subtitles.bat
+a. download.video.bat
+
+for downloading the video in AVC high with the audio and subtitles
+
+python NFripper.py --high
+
+for downloading the video in main with the audio and subtitles
+
+python NFripper.py --main
+
+to download the video in 720p use
+
+python NFripper.py --high -q 720
+
+or
+
+python NFripper.py --main -q 720
+
+If you do not want to download the subtitles use
+
+python NFripper.py --high --ns
+
+The script does not support decrypting the videos with HDR profile or HEVC profile, do not use --hdr or --hevc
+
+6. When you run any of the three batches you will be asked for the URL of the TV Show or the movie in Netflix
+
+for example use this link to download the video of Rick and Morty
+
+https://www.netflix.com/title/80014749
+
+or you could add the ID like this
+
+python NFripper.py 80014749 --high
+
+The downloads will be saved in the folder "Netflix-videos-downloader-main\downloads\netflix"
+
+
+
+b. download.subtitles.bat
 
 for downloading only the subtitles
 
@@ -99,7 +137,9 @@ with the language you want, for example for the English language to be the defau
 
 https://github.com/Essam3152/Netflix-videos-downloader/blob/main/configs/config.py#L36
 
-b. download.audio.bat
+
+
+c. download.audio.bat
 
 for downloading only the audio
 
@@ -132,41 +172,7 @@ with the language you want, for example for the French language to be the defaul
 
 https://github.com/Essam3152/Netflix-videos-downloader/blob/main/configs/config.py#L35
 
-c. download.video.bat
 
-for downloading the video in AVC high with the audio and subtitles
-
-python NFripper.py --high
-
-for downloading the video in main with the audio and subtitles
-
-python NFripper.py --main
-
-to download the video in 720p use
-
-python NFripper.py --high -q 720
-
-or
-
-python NFripper.py --main -q 720
-
-If you do not want to download the subtitles use
-
-python NFripper.py --high --ns
-
-The script does not support decrypting the videos with HDR profile or HEVC profile, do not use --hdr or --hevc
-
-6. When you run any of the three batches you will be asked for the URL of the TV Show or the movie in Netflix
-
-for example use this link to download the video of Rick and Morty
-
-https://www.netflix.com/title/80014749
-
-or you could add the ID like this
-
-python NFripper.py 80014749 --high
-
-The downloads will be saved in the folder "Netflix-videos-downloader-main\downloads\netflix"
 
 For adding more options use the instructions in NFripper.py, open the file with Notepad++.
 
