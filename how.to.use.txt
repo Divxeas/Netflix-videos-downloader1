@@ -44,11 +44,11 @@ https://addons.mozilla.org/en-US/firefox/addon/cookies-txt-one-click/
 
 a. download.video.bat
 
-for downloading the video in AVC high with the audio and subtitles
+for downloading the video in AVC high profile with the audio and subtitles
 
 python NFripper.py --high
 
-for downloading the video in main with the audio and subtitles
+for downloading the video in Main profile with the audio and subtitles
 
 python NFripper.py --main
 
@@ -65,18 +65,6 @@ If you do not want to download the subtitles use
 python NFripper.py --high --ns
 
 The script does not support decrypting the videos with HDR profile or HEVC profile, do not use --hdr or --hevc
-
-6. When you run any of the three batches you will be asked for the URL of the TV Show or the movie in Netflix
-
-for example use this link to download the video of Rick and Morty
-
-https://www.netflix.com/title/80014749
-
-or you could add the ID like this
-
-python NFripper.py 80014749 --high
-
-The downloads will be saved in the folder "Netflix-videos-downloader-main\downloads\netflix"
 
 
 
@@ -173,6 +161,18 @@ with the language you want, for example for the French language to be the defaul
 https://github.com/Essam3152/Netflix-videos-downloader/blob/main/configs/config.py#L35
 
 
+
+6. When you run any of the three batches you will be asked for the URL of the TV Show or the movie in Netflix
+
+for example use this link to download the video of Rick and Morty
+
+https://www.netflix.com/title/80014749
+
+or you could add the ID like this
+
+python NFripper.py 80014749 --high
+
+The downloads will be saved in the folder "Netflix-videos-downloader-main\downloads\netflix"
 
 For adding more options use the instructions in NFripper.py, open the file with Notepad++.
 
