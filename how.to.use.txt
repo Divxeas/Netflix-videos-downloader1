@@ -152,6 +152,14 @@ to download the audio in multiple languages use
 
 python NFripper.py --ns --nv --keep --alang eng fra rus pol
 
+To download the audio in all the available languages use
+
+python NFripper.py --ns --nv --keep --all-audios
+
+or
+
+python NFripper.py --ns --nv --keep --all-audios
+
 
 To select only the audio in the English language to download you could modify NFripper.py by replacing
 
