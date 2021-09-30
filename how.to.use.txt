@@ -66,6 +66,19 @@ python NFripper.py --high --ns
 
 The script does not support decrypting the videos with HDR profile or HEVC profile, do not use --hdr or --hevc
 
+When you run any of the three batches you will be asked for the URL of the TV Show or the movie in Netflix
+
+for example use this link to download the video of Rick and Morty
+
+https://www.netflix.com/title/80014749
+
+or you could add the ID like this
+
+python NFripper.py 80014749 --high
+
+The downloads will be saved in the folder "Netflix-videos-downloader-main\downloads\netflix"
+
+For adding more options use the instructions in NFripper.py, open the file with Notepad++.
 
 
 b. download.subtitles.bat
@@ -162,28 +175,17 @@ https://github.com/Essam3152/Netflix-videos-downloader/blob/main/configs/config.
 
 
 
-6. When you run any of the three batches you will be asked for the URL of the TV Show or the movie in Netflix
-
-for example use this link to download the video of Rick and Morty
-
-https://www.netflix.com/title/80014749
-
-or you could add the ID like this
-
-python NFripper.py 80014749 --high
-
-The downloads will be saved in the folder "Netflix-videos-downloader-main\downloads\netflix"
-
-For adding more options use the instructions in NFripper.py, open the file with Notepad++.
-
 If you got the error message "title is not available in your Netflix region" in Netflix-videos-downloader-main\configs\Cookies
 delete cookies_nf.txt and add a new cookies.txt
 
+
 Don't put any files in the folder Netflix-videos-downloader-main\configs\Tokens, the script will generate netflix_token.json by itself.
+
 
 For the language codes see here.
 
 https://github.com/Essam3152/Netflix-videos-downloader/blob/main/helpers/ripprocess.py#L372-L404
+
 
 In case of getting any error messages with aria2c you could disable it by adding the command --no-aria2c
 
