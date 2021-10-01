@@ -138,6 +138,15 @@ with the language you want, for example for the English language to be the defau
 
 https://github.com/Essam3152/Netflix-videos-downloader/blob/main/configs/config.py#L36
 
+To download the subtitles in all of the languages and all the forced subtitles use
+
+python NFripper.py --nv --na --keep --all-forced
+
+To download the forced subtitles in specific languages use
+
+python NFripper.py --nv --na --keep --flang jpn tha 
+
+
 
 
 c. download.audio.bat
