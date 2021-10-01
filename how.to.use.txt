@@ -44,11 +44,11 @@ https://addons.mozilla.org/en-US/firefox/addon/cookies-txt-one-click/
 
 a. download.video.bat
 
-for downloading the video in AVC high profile with the audio and subtitles
+for downloading the video in AVC high profile with the audio and subtitles (the video usually be in small size with low bitrate)
 
 python NFripper.py --high
 
-for downloading the video in Main profile with the audio and subtitles
+for downloading the video in Main profile with the audio and subtitles (the video usually be in big size with high bitrate)
 
 python NFripper.py --main
 
