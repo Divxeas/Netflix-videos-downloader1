@@ -514,7 +514,9 @@ class Muxer(object):
 			"{} {}.eac3",
 			"{} {} - Audio Description.eac3",
 			"{} {}.aac",
-			"{} {} - Audio Description.aac",			
+			"{} {} - Audio Description.aac",
+			"{} {}.m4a",
+			"{} {} - Audio Description.m4a",
 		]
 
 		for (audio_language, subs_language, language_id, language_name,) in (
