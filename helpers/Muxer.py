@@ -383,7 +383,7 @@ class Muxer(object):
 			["Malay", "msa", "may", "Malay"],
 			["Malayalam", "mal", "mal", "Malayalam"],
 			["Mandarin", "None", "chi", "Mandarin"],
-			["Mandarin (Putonghua)", "zh-CN", "zho", "Mandarin (Putonghua)"],			
+			["Mandarin (Putonghua)", "zho", "chi", "Mandarin (Putonghua)"],			
 			["Mandarin Chinese (Simplified)", "zh-Hans", "chi", "Simplified"],
 			["Mandarin Chinese (Traditional)", "zh-Hant", "chi", "Traditional"],
 			["Yue Chinese", "yue", "chi", "(Yue Chinese)"],
