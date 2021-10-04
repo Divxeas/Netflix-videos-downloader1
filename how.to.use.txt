@@ -190,6 +190,14 @@ with the language you want, for example for the French language to be the defaul
 
 https://github.com/Essam3152/Netflix-videos-downloader/blob/main/configs/config.py#L35
 
+To download the audio in AAC codec use
+
+python NFripper.py 80014749 --ns --nv --keep --alang eng -s 1 -e 1 --aformat-51ch aac
+
+or
+
+python NFripper.py 80014749 --ns --nv --keep --alang eng -s 1 -e 1 --aformat-2ch aac
+
 
 
 If you got the error message "title is not available in your Netflix region" in Netflix-videos-downloader-main\configs\Cookies
