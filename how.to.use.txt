@@ -54,6 +54,12 @@ for downloading the video in Main profile with the audio and subtitles (the vide
 
 python NFripper.py --main
 
+or use
+
+python NFripper.py
+
+and the script will download the video with the highest bitrate (which usually will be in Main profile)
+
 to download the video in 720p use
 
 python NFripper.py --high -q 720
