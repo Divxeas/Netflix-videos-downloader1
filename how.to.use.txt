@@ -88,6 +88,21 @@ The downloads will be saved in the folder "Netflix-videos-downloader-main\downlo
 
 For adding more options use the instructions in NFripper.py, open the file with Notepad++.
 
+To decrypt the videos with the resolution 480p which will be in Main profile you will need to replace "playready-h264bpl30-dash" with "playready-h264mpl30-dash" in the file get_keys.py which is in the folder Netflix-videos-downloader-main\helpers\Parsers\Netflix\ in this line
+
+https://github.com/Essam3152/Netflix-videos-downloader/blob/main/helpers/Parsers/Netflix/get_keys.py#L55
+
+use
+
+python NFripper.py 80014749 --main -q 480
+
+or
+
+python NFripper.py 80014749 -q 480
+
+for downloading the videos in 480p
+
+
 
 b. download.subtitles.bat
 
