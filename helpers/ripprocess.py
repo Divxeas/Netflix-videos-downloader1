@@ -3,7 +3,8 @@ from titlecase import titlecase
 from configs.config import tool
 from helpers.proxy_environ import hold_proxy
 import tldextract
-from collections import namedtuple, Sequence
+from collections import namedtuple
+from collections.abc import Sequence
 from natsort import natsorted
 import logging
 import unicodedata, string
