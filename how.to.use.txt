@@ -1,8 +1,10 @@
-1. Install python, be sure to add python to PATH while installing it
+1. Install python 3.9.7, be sure to add python to PATH while installing it
 
-https://www.python.org/downloads/
+https://www.python.org/ftp/python/3.9.7/python-3.9.7-amd64.exe
 
 https://datatofish.com/add-python-to-windows-path/
+
+(to use python 3.10.0 run install.lxml.bat before running install.requirements.bat)
 
 2. Install the dependencies by using this command
 
