@@ -14,7 +14,7 @@ from helpers.Parsers.Netflix.get_manifest import get_manifest
 from helpers.ripprocess import EpisodesNumbersHandler, ripprocess
 from helpers.vpn import connect
 from pywidevine.cdm import cdm, deviceconfig
-from wvdecryptcustom import WvDecrypt
+from pywidevine.decrypt.wvdecryptcustom import WvDecrypt
 
 class netflix:
 	def __init__(self, args, commands):
@@ -344,8 +344,7 @@ class netflix:
 			"High KEYS",
 			"HEVC KEYS",
 			"HDR-10 KEYS",
-			"Main KEYS",
-			"Main480 KEYS"
+			"Main KEYS"
 		]
 
 		if not profilename in available_profiles:
@@ -439,8 +438,6 @@ class netflix:
 
 			if self.args.video_high:
 				KEYS = self.GetKeys(IDNet, "High KEYS")
-			if self.args.video_main480:
-				KEYS = self.GetKeys(IDNet, "Main480 KEYS")
 			else:
 				if self.args.hevc:
 					KEYS = self.GetKeys(IDNet, "HEVC KEYS")
@@ -696,9 +693,6 @@ class netflix:
 			
 			elif self.args.hdr:
 				KEYS += self.GetKeys(NetflixID, "HDR-10 KEYS")
-                
-			elif self.args.main480:
-				KEYS += self.GetKeys(NetflixID, "Main480 KEYS")
 			
 			else: 
 				for profile in ["Main KEYS", "High KEYS"]:
