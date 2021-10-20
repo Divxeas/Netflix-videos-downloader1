@@ -344,7 +344,8 @@ class netflix:
 			"High KEYS",
 			"HEVC KEYS",
 			"HDR-10 KEYS",
-			"Main KEYS"
+			"Main KEYS",
+			"Main480 KEYS"
 		]
 
 		if not profilename in available_profiles:
@@ -438,6 +439,8 @@ class netflix:
 
 			if self.args.video_high:
 				KEYS = self.GetKeys(IDNet, "High KEYS")
+			if self.args.video_main480:
+				KEYS = self.GetKeys(IDNet, "Main480 KEYS")
 			else:
 				if self.args.hevc:
 					KEYS = self.GetKeys(IDNet, "HEVC KEYS")
@@ -693,6 +696,9 @@ class netflix:
 			
 			elif self.args.hdr:
 				KEYS += self.GetKeys(NetflixID, "HDR-10 KEYS")
+                
+			elif self.args.main480:
+				KEYS += self.GetKeys(NetflixID, "Main480 KEYS")
 			
 			else: 
 				for profile in ["Main KEYS", "High KEYS"]:
