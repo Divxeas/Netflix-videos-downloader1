@@ -450,6 +450,8 @@ class netflix:
 					else:
 						if "playready-h264hpl" in Profile:
 								KEYS = self.GetKeys(IDNet, "High KEYS")
+						if "playready-h264mpl30" in Profile:
+								KEYS = self.GetKeys(IDNet, "Main480 KEYS")
 						else:
 							KEYS = self.GetKeys(IDNet, "Main KEYS")
 			# ~
