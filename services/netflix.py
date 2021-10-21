@@ -697,11 +697,9 @@ class netflix:
 			elif self.args.hdr:
 				KEYS += self.GetKeys(NetflixID, "HDR-10 KEYS")
                 
-			elif self.args.main480:
-				KEYS += self.GetKeys(NetflixID, "Main480 KEYS")
 			
 			else: 
-				for profile in ["Main KEYS", "High KEYS"]:
+				for profile in ["Main KEYS", "Main480 KEYS", "High KEYS"]:
 					KEYS += self.GetKeys(NetflixID, profile)
 
 			self.logger.info("\n" + TitleName + "\n")
