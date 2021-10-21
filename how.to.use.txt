@@ -92,6 +92,10 @@ For downloading the videos in 480p use
 
 python NFripper.py 80014749 --main480 -q 480
 
+or
+
+python NFripper.py 80014749 -q 480
+
 
 
 b. download.subtitles.bat
