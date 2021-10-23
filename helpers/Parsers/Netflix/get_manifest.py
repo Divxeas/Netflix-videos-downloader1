@@ -33,6 +33,18 @@ def MSLprofiles():
 				"playready-h264mpl40-dash",
 			],
 		},
+		"MAIN480": {
+			"SD": [
+				"playready-h264bpl30-dash",
+				"playready-h264mpl22-dash",
+				"playready-h264mpl30-dash",
+			],
+			"ALL": [
+				"playready-h264bpl30-dash",
+				"playready-h264mpl22-dash",
+				"playready-h264mpl30-dash",
+			],
+		},
 		"HIGH": {
 			"SD": [
 				"playready-h264hpl22-dash",
@@ -183,71 +195,81 @@ class get_manifest:
 					profiles += self.profiles["MAIN"]["SD"]
 			else:
 				profiles += self.profiles["MAIN"]["ALL"]
+  
 		else:
-			if self.args.video_high:
+			if self.args.video_main480:
 				if self.args.customquality:
-					if int(self.args.customquality[0]) == 1080:
-						profiles += self.profiles["HIGH"]["FHD"]
-					elif (
-						int(self.args.customquality[0]) < 1080
-						and int(self.args.customquality[0]) >= 720
-					):
-						profiles += self.profiles["HIGH"]["HD"]
-					elif int(self.args.customquality[0]) < 720:
-						profiles += self.profiles["HIGH"]["SD"]
+					if int(self.args.customquality[0]) < 720:
+						profiles += self.profiles["MAIN480"]["SD"]
 				else:
-					profiles += self.profiles["HIGH"]["ALL"]
+					profiles += self.profiles["MAIN480"]["ALL"]
 			else:
-				if self.args.hdr:
+				if self.args.video_high:
 					if self.args.customquality:
 						if int(self.args.customquality[0]) == 1080:
-							profiles += self.profiles["HDR"]["FHD"]
+							profiles += self.profiles["HIGH"]["FHD"]
 						elif (
 							int(self.args.customquality[0]) < 1080
 							and int(self.args.customquality[0]) >= 720
 						):
-							profiles += self.profiles["HDR"]["HD"]
+							profiles += self.profiles["HIGH"]["HD"]
 						elif int(self.args.customquality[0]) < 720:
-							profiles += self.profiles["HDR"]["SD"]
+							profiles += self.profiles["HIGH"]["SD"]
 					else:
-						profiles += self.profiles["HDR"]["ALL"]
-				
-				elif self.args.hevc:
-					if self.args.customquality:
-						if int(self.args.customquality[0]) == 1080:
-							profiles += self.profiles["HEVC"]["FHD"]
-							if addHEVCDO:
-								profiles += self.profiles['HEVCDO']['FHD']
-						elif (
-							int(self.args.customquality[0]) < 1080
-							and int(self.args.customquality[0]) >= 720
-						):
-							profiles += self.profiles["HEVC"]["HD"]
-							if addHEVCDO:
-								profiles += self.profiles['HEVCDO']['HD']		
-						elif int(self.args.customquality[0]) < 720:
-							profiles += self.profiles["HEVC"]["SD"]
-							if addHEVCDO:
-								profiles += self.profiles['HEVCDO']['SD']		
-					else:
-						profiles += self.profiles["HEVC"]["ALL"]
-						if addHEVCDO:
-							profiles += self.profiles['HEVCDO']['ALL']
-				
+						profiles += self.profiles["HIGH"]["ALL"]
+
 				else:
-					getHigh = True
-					if self.args.customquality:
-						if int(self.args.customquality[0]) == 1080:
-							profiles += self.profiles["MAIN"]["FHD"]
-						elif (
-							int(self.args.customquality[0]) < 1080
-							and int(self.args.customquality[0]) >= 720
-						):
-							profiles += self.profiles["MAIN"]["HD"]
-						elif int(self.args.customquality[0]) < 720:
-							profiles += self.profiles["MAIN"]["SD"]
+					if self.args.hdr:
+						if self.args.customquality:
+							if int(self.args.customquality[0]) == 1080:
+								profiles += self.profiles["HDR"]["FHD"]
+							elif (
+								int(self.args.customquality[0]) < 1080
+								and int(self.args.customquality[0]) >= 720
+							):
+								profiles += self.profiles["HDR"]["HD"]
+							elif int(self.args.customquality[0]) < 720:
+								profiles += self.profiles["HDR"]["SD"]
+						else:
+							profiles += self.profiles["HDR"]["ALL"]
+					
+					elif self.args.hevc:
+						if self.args.customquality:
+							if int(self.args.customquality[0]) == 1080:
+								profiles += self.profiles["HEVC"]["FHD"]
+								if addHEVCDO:
+									profiles += self.profiles['HEVCDO']['FHD']
+							elif (
+								int(self.args.customquality[0]) < 1080
+								and int(self.args.customquality[0]) >= 720
+							):
+								profiles += self.profiles["HEVC"]["HD"]
+								if addHEVCDO:
+									profiles += self.profiles['HEVCDO']['HD']		
+							elif int(self.args.customquality[0]) < 720:
+								profiles += self.profiles["HEVC"]["SD"]
+								if addHEVCDO:
+									profiles += self.profiles['HEVCDO']['SD']		
+						else:
+							profiles += self.profiles["HEVC"]["ALL"]
+							if addHEVCDO:
+								profiles += self.profiles['HEVCDO']['ALL']
+					
 					else:
-						profiles += self.profiles["MAIN"]["ALL"]
+						getHigh = True
+						if self.args.customquality:
+							if int(self.args.customquality[0]) == 1080:
+								profiles += self.profiles["MAIN"]["FHD"]
+							elif (
+								int(self.args.customquality[0]) < 1080
+								and int(self.args.customquality[0]) >= 720
+							):
+								profiles += self.profiles["MAIN"]["HD"]
+							elif int(self.args.customquality[0]) < 720:
+								profiles += self.profiles["MAIN"]["SD"]
+						else:
+							profiles += self.profiles["MAIN"]["ALL"]
+     
 
 		if self.args.aformat_2ch:
 			if str(self.args.aformat_2ch[0]) == "aac":
@@ -714,7 +736,9 @@ class get_manifest:
 		elif self.args.hdr:
 			self.logger.info("Getting HDR-10 Manifest...")
 		elif self.args.video_high:
-			self.logger.info("Getting High Profile Manifest...")			
+			self.logger.info("Getting High Profile Manifest...")
+		elif self.args.video_main480:
+			self.logger.info("Getting Main480 Profile Manifest...")	
 		else:
 			self.logger.info("Getting Main Profile Manifest...")
 
