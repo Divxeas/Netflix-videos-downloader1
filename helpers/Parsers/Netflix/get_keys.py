@@ -54,11 +54,6 @@ def __profiles(profile, addHEVCDO=False):
 		profiles += [
 			"playready-h264bpl30-dash",
 		]
-        
-	elif profile == "Main480 KEYS":
-		profiles += [
-			"playready-h264mpl30-dash",
-		]
 
 	elif profile == "HEVC KEYS":
 		profiles += [
@@ -109,8 +104,7 @@ def GettingKEYS_Netflixv2(nfID, profile): #
 		"High KEYS",
 		"HEVC KEYS",
 		"HDR-10 KEYS",
-		"Main KEYS",
-		"Main480 KEYS"
+		"Main KEYS"
 	]
 
 	if not profile in available_profiles:
