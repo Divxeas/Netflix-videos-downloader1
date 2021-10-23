@@ -88,10 +88,6 @@ The downloads will be saved in the folder "Netflix-videos-downloader-main\downlo
 
 For adding more options use the instructions in NFripper.py, open the file with Notepad++.
 
-For downloading the videos in 480p use
-
-python NFripper.py 80014749 -q 480
-
 
 
 b. download.subtitles.bat
