@@ -37,7 +37,6 @@ if __name__ == "__main__":
     parser.add_argument("--hdr", dest="hdr", help="will return HDR profile", action="store_true")    
     parser.add_argument("--high", dest="video_high", help="return MSL High Video manifest for hpl videos, usually small size low bitrate.", action="store_true",)
     parser.add_argument("--main", dest="video_main", help="return MSL Main Video manifest for mpl videos, usually Big size High bitrate.", action="store_true",) 
-    parser.add_argument("--main480", dest="video_main480", help="return MSL Main Video manifest for mpl videos, usually Big size High bitrate.", action="store_true",) 
     parser.add_argument("--check", dest="check", help="hpl vs mpl.", action="store_true",)     
     parser.add_argument("--all-audios", dest="allaudios", help="all download audios of the movie/show", action="store_true",)
     parser.add_argument("--all-forced", dest="allforcedlang", help="all download forced subs of the movie/show", action="store_true",)
