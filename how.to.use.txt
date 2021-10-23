@@ -70,7 +70,7 @@ python NFripper.py --main -q 720
 
 to download the video in 480p use
 
-python NFripper.py -q 480
+python NFripper.py --main480 -q 480
 
 If you do not want to download the subtitles use
 
