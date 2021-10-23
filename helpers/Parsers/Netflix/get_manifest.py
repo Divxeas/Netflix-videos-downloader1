@@ -190,10 +190,7 @@ class get_manifest:
 					profiles += self.profiles["MAIN"]["SD"]
 			else:
 				profiles += self.profiles["MAIN"]["ALL"]
-		if self.args.video_main480:
-			if self.args.customquality:
-				if int(self.args.customquality[0]) < 720:
-					profiles += self.profiles["MAIN480"]["SD"]    
+    
 		else:
 			if self.args.video_high:
 				if self.args.customquality:
