@@ -929,7 +929,7 @@ class netflix:
 				)
 
 				for season in data["video"]["seasons"]:
-					if int(season["seq"]) == int(seasonMatchNumber):
+					if str(season["seq"]) in seasonMatchNumber:
 						for episode in season["episodes"]:
 							if int(episode["seq"]) in AllowedEpisodesNumbers:
 								self.items.append(
