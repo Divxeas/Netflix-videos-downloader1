@@ -64,7 +64,9 @@ If you want to downlod the video for a specific seasons or all the seasons use
 
 python NFripper.py 80014749 -s 1
 
-python NFripper.py 80014749 -s 1,2,3,4,5
+python NFripper.py 80014749 -s 1,3,5
+
+python NFripper.py 80014749 -s 1-5
 
 
 to download the video in 720p use
@@ -123,7 +125,7 @@ python NFripper.py --nv --na --keep --slang eng -s 1 -e 2,4,7
 
 You could download the subtitles of all the seasons by using
 
-python NFripper.py 70153404 --nv --na --keep -s 1,2,3,4,5,6,7,8,9,10 --slang eng
+python NFripper.py 70153404 --nv --na --keep -s 1-10 --slang eng
 
 remove --slang eng if you want to download the subtitles in all of the available languages in Netflix of your country.
 
