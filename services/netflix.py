@@ -915,9 +915,11 @@ class netflix:
 							)
 			else:
 				seasonMatchNumber = (
-					str(self.args.season).lstrip("0")
+					self.EpisodesNumbersHandler.sortNumbers(
+						str(self.args.season).lstrip("0")
+					)
 					if self.args.season
-					else str(input("ENTER Season Number: ").strip()).lstrip("0")
+					else self.EpisodesNumbersHandler.sortNumbers (str(input("ENTER Season Number: ").strip()).lstrip("0"))
 				)
 
 				AllowedEpisodesNumbers = (
@@ -929,7 +931,7 @@ class netflix:
 				)
 
 				for season in data["video"]["seasons"]:
-					if str(season["seq"]) in seasonMatchNumber:
+					if int(season["seq"]) in seasonMatchNumber:
 						for episode in season["episodes"]:
 							if int(episode["seq"]) in AllowedEpisodesNumbers:
 								self.items.append(
