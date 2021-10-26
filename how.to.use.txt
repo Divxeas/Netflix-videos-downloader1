@@ -60,6 +60,15 @@ python NFripper.py
 
 and the script will download the video with the highest bitrate (which usually will be in Main profile)
 
+If you want to downlod the video for a specific seasons or all the seasons use
+
+python NFripper.py 80014749 -s 1
+
+python NFripper.py 80014749 -s 1-5
+
+python NFripper.py 80014749 -s 1,3,5
+
+
 to download the video in 720p use
 
 python NFripper.py --high -q 720
@@ -106,13 +115,19 @@ to download the subtitles in multiple languages use
 
 python NFripper.py --nv --na --keep --slang eng fra rus pol
 
-if you want to downlod the subtitles for a specific episode or episodes use
+If you want to downlod the subtitles for a specific episode or episodes use
 
 python NFripper.py --nv --na --keep --slang eng -s 1 -e 8
 
 python NFripper.py --nv --na --keep --slang eng -s 1 -e 1-3
 
 python NFripper.py --nv --na --keep --slang eng -s 1 -e 2,4,7
+
+You could download the subtitles of all the seasons by using
+
+python NFripper.py 70153404 --nv --na --keep -s 1-10 --slang eng
+
+remove --slang eng if you want to download the subtitles in all of the available languages in Netflix of your country.
 
 To select only the subtitle in the English language to download you could modify NFripper.py by replacing
 
@@ -123,23 +138,6 @@ To select only the subtitle in the English language to download you could modify
     parser.add_argument("--slang", dest="sublang", nargs="*", help="download only selected subtitle languages", default=['eng'],)
     
 https://github.com/Essam3152/Netflix-videos-downloader/blob/main/NFripper.py#L26
-
-You could download the subtitles of all the seasons by using something like this, this is for the TV show "Friends"
-
-https://www.netflix.com/title/70153404
-
-python NFripper.py --nv --na 70153404 --keep -s 1 --slang eng
-python NFripper.py --nv --na 70153404 --keep -s 2 --slang eng
-python NFripper.py --nv --na 70153404 --keep -s 3 --slang eng
-python NFripper.py --nv --na 70153404 --keep -s 4 --slang eng
-python NFripper.py --nv --na 70153404 --keep -s 5 --slang eng
-python NFripper.py --nv --na 70153404 --keep -s 6 --slang eng
-python NFripper.py --nv --na 70153404 --keep -s 7 --slang eng
-python NFripper.py --nv --na 70153404 --keep -s 8 --slang eng
-python NFripper.py --nv --na 70153404 --keep -s 9 --slang eng
-python NFripper.py --nv --na 70153404 --keep -s 10 --slang eng
-
-remove --slang eng if you want to download the subtitles in all of the available languages in Netflix of your country.
 
 To set the default subtitles language in config.py replace
 
