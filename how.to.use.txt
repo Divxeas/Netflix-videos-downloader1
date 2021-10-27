@@ -229,3 +229,8 @@ In case of getting any error messages with aria2c you could disable it by adding
 
 python NFripper.py --no-aria2c --high
 
+To download the Interactive TV shows and movies, in MSLClient.py which is in the folder helpers/Parsers/Netflix/ in this line change it to "isBranching": True and after you download the video change it to "isBranching": False.
+
+https://github.com/Essam3152/Netflix-videos-downloader/blob/main/helpers/Parsers/Netflix/MSLClient.py#L164
+
+https://help.netflix.com/en/node/62526
