@@ -209,6 +209,10 @@ or
 
 python NFripper.py 80014749 --ns --nv --keep --alang eng -s 1 -e 1 --aformat-2ch aac
 
+To download the audio in a specific bitrate use
+
+python NFripper.py 81185548 --audio-bitrate 384
+
 
 
 If you got the error message "title is not available in your Netflix region" in Netflix-videos-downloader-main\configs\Cookies
