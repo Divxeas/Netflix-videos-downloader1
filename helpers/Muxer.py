@@ -476,6 +476,20 @@ class Muxer(object):
 			outputVideo = self.setName()
 
 		self.outputVideo = outputVideo
+        
+		videoTitle = (
+			self.scheme.replace(
+				"{t}", ripprocess().CleanMyFileNamePlease(self.CurrentName)
+			)
+			.replace("{r}", self.Heigh())
+			.replace("{s}", self.source_tag)
+			.replace("{ac}", self.AudioProfile)
+			.replace("{vc}", self.VideoProfile)
+			.replace("{gr}", self.Group)
+		)
+
+		for i in range(10):
+			videoTitle = re.sub(r"(\.\.)", ".", videoTitle)
 
 		if self.fps24:
 			self.merge += [
@@ -498,7 +512,7 @@ class Muxer(object):
 				"--output",
 				outputVideo,
 				"--title",
-				'RAB',
+				videoTitle,
 				"(",
 				inputVideo,
 				")",
